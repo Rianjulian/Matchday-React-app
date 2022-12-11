@@ -1,0 +1,33 @@
+.matchCard{
+    padding: 20px 12px;
+    background-color: var(--secondary-background-color);
+}
+
+.matchCard p{
+    font-size: clamp(14px,1vw,2em);
+    text-align: center;
+}
+
+.match{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+    margin-top: 20px;
+    align-items: center;
+}
+
+.team{
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    align-content: flex-start;
+}
+
+.team img{
+    width: 52px;
+}
+
+.team h1{
+    text-align: center;
+    font-size: clamp(14px,1vw,2em);
+}

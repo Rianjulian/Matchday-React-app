@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+// @ts-nocheck
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import './App.css';
+import Navbar from './component/navbar';
+import Main from './component/container';
+import { getMatchData } from './services/getMatch';
+import MatchList from './pages/matchday/matchday';
 
 function App() {
+  const [match, setMatches] = useState([])
+
+  useEffect(() => {
+
+    const fetchMatch = async () =>{
+      const data = await getMatchData({
+          searchQuery: 'PL'
+      })
+      setMatches(data.matches)
+      console.log(data);
+      return
+    }
+    fetchMatch()
+
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Main>
+        {<MatchList matches={match}/>}
+      </Main>
+    </>
   );
 }
 
