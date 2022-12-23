@@ -13,8 +13,8 @@ code {
 }
 
 :root {
-  --main-background-color: #090909;
-  --secondary-background-color: #121212;
+  --main-background-color: #000000;
+  --secondary-background-color: #101010;
 
   --main-font-color: #111827;
   --main-font-color-light: #f4f4f4;

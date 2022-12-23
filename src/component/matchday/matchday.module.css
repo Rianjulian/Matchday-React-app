@@ -1,33 +1,48 @@
 .matchCard{
-    padding: 20px 12px;
-    background-color: var(--secondary-background-color);
-}
-
-.matchCard p{
-    font-size: clamp(14px,1vw,2em);
-    text-align: center;
-}
-
-.match{
+    background-color: #1b1b1b;
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3,minmax(100px,1fr));
-    margin-top: 20px;
+    grid-template-columns: 1fr 0.5fr 1fr;
     align-items: center;
+    width: 700px;
+    gap: 12px;
+}
+
+.result{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.result p{
+    padding: 8px 12px;
+    background-color: #045bfc;
+    border: 1px solid var(--secondary-background-color);
+}
+
+.score{
+    padding: 8px 12px;
+    background-color: #045bfc;
+    font-size: clamp(16px,1vw,1.5em);
+}
+
+.null{
+    background-color: #1b1b1b;
 }
 
 .team{
-    display: grid;
-    gap: 8px;
-    justify-items: center;
-    align-content: flex-start;
-}
-
-.team img{
-    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .team h1{
-    text-align: center;
-    font-size: clamp(14px,1vw,2em);
+    font-size: clamp(14px,1vw,1em);
+}
+
+.team img{
+    width: 2.5em;
+
 }

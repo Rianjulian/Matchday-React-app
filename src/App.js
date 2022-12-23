@@ -4,8 +4,9 @@ import { useParams } from 'react-router-dom'
 import './App.css';
 import Navbar from './component/navbar';
 import Main from './component/container';
-import { getMatchData } from './services/getMatch';
+import { getMatchData } from './services/premier-league/getMatch';
 import MatchList from './pages/matchday/matchday';
+import Banner from './component/poster';
 
 function App() {
   const [match, setMatches] = useState([])
@@ -28,7 +29,10 @@ function App() {
     <>
       <Navbar/>
       <Main>
+        <aside>Hello</aside>
+        {<Banner/>}
         {<MatchList matches={match}/>}
+        <div className="div3">World</div>
       </Main>
     </>
   );

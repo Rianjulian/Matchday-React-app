@@ -1,11 +1,18 @@
 nav{
-    padding: 2vw 8vw;
+    padding: 2vw 5vw;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
     color: var(--main-font-color-light);
     background-color: var(--main-background-color);
+}
+
+nav h1{
+    padding: 2px 4px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
 }
 
 .tab{

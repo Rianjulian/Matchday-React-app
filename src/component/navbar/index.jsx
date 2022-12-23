@@ -6,11 +6,13 @@ import PropTypes from 'prop-types'
 const Navbar = () => {
     return(
         <nav>
-            <h1>Footballisme</h1>
+            <h1>FOOTBALLISME</h1>
             <div className={styles.tab}>
-                <a href="http://">Matchday</a>
-                <a href="http://">Matchday Result</a>
-                <a href="http://">Standings</a>
+                <a href="http://">Premier League</a>
+                <a href="http://">La Liga</a>
+                <a href="http://">Serie A</a>
+                <a href="http://">Bundeliga</a>
+                <a href="http://">Ligue 1</a>
             </div>
         </nav>
     )
