@@ -1,0 +1,20 @@
+.standing{
+    padding: 16px 20px;
+}
+
+.standing img{
+    width:1.5em;
+}
+
+table{
+    display: flex;
+    justify-content: space-between;
+}
+
+tr {
+    padding: 0 3px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    gap: 28px;
+}
