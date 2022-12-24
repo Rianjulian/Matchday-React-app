@@ -6,6 +6,6 @@ main {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr 0.6fr;
     grid-template-rows: 180px 500px;
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
