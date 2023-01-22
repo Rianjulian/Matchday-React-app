@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from 'prop-types'
 import styles from './standings.module.css'
-import Standings from '../../component/standings'
+import Standings from '../../../component/standings'
 
 const StandingList = ({ standings }) => {
     return (
