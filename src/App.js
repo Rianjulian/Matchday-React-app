@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './component/navbar';
 import LaLiga from './pages/laliga/laliga';
 import PremierLeague from './pages/premier-league/pl';
+import SerieA from './pages/serie/serie';
 // import Main from './component/container';
 // import { getMatchData } from './services/premier-league/getMatch';
 // import { getStandingData } from './services/premier-league/getStandings';
@@ -22,7 +23,7 @@ function App() {
           <Route index element={<PremierLeague/>} />
           <Route path='pl' element={<PremierLeague/>}/>
           <Route path='laliga' element={<LaLiga/>}/>
-          <Route path='serie'/>
+          <Route path='serie' element={<SerieA/>}/>
           <Route path='bundesliga'/>
           <Route path='ligue1'/>
         </Route>
