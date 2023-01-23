@@ -22,6 +22,7 @@ const StandingList = ({ standings }) => {
                     return (
                         <Standings
                             key={index}
+                            position={tabel.position}
                             teamImg={tabel.team.crestUrl}
                             played={tabel.playedGames}
                             win={tabel.won}
