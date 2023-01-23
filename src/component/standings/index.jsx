@@ -3,24 +3,28 @@ import PropTypes, { number, string } from 'prop-types'
 import styles from './standings.module.css'
 import classnames from 'classnames';
 
-const Standings = ({ teamImg, teamName, played, win, draw, lose, points }) => {
+const Standings = ({ position, teamImg, teamName, played, win, draw, lose, points }) => {
     return (
         <div className={styles.standing}>
-                <table>
+            <table>
+                <th>
+                    <p>{position}.</p>
                     <img src={teamImg} alt={teamName} />
-                    <tr>
-                        <td>{played}</td>
-                        <td>{win}</td>
-                        <td>{draw}</td>
-                        <td>{lose}</td>
-                        <td>{points}</td>
-                    </tr>
-                </table>
+                </th>
+                <tr>
+                    <td>{played}</td>
+                    <td>{win}</td>
+                    <td>{draw}</td>
+                    <td>{lose}</td>
+                    <td>{points}</td>
+                </tr>
+            </table>
         </div>
     )
 }
 
 Standings.propTypes = {
+    position: PropTypes.string,
     teamImg: PropTypes.string,
     teamName: PropTypes.string,
     played: PropTypes.number,

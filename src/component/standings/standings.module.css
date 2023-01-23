@@ -1,5 +1,5 @@
 .standing{
-    padding: 16px 20px;
+    padding: 16px 14px;
 }
 
 .standing img{
@@ -9,6 +9,12 @@
 table{
     display: flex;
     justify-content: space-between;
+}
+
+th{
+    display:flex;
+    align-items:center;
+    gap:8px
 }
 
 tr {
