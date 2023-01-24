@@ -6,7 +6,7 @@ import MatchCard from '../../../component/matchday'
 import home from '../../../assets/serie-home.png'
 import away from '../../../assets/serie-away.png'
 
-const MatchList = ({matches}) => {
+const MatchList = ({ matches }) => {
     return(
         <div className={styles.matchWrapper}>
             <h3>Match & Result</h3>

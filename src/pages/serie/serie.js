@@ -16,7 +16,7 @@ const SerieA = () => {
 
     const fetchMatch = async () =>{
       const data = await getMatchData({
-          searchQuery: 'SA'
+          id: 'SA'
       })
       setMatches(data.matches)
       // console.log(data);
@@ -30,7 +30,7 @@ const SerieA = () => {
 
     const fetchStanding = async () =>{
       const data = await getStandingData({
-          searchQuery: 'SA'
+          id: 'SA'
       })
       setStanding(data.standings)
       console.log(data);

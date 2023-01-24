@@ -7,24 +7,32 @@ const Standings = ({ position, teamImg, teamName, played, win, draw, lose, point
     return (
         <div className={styles.standing}>
             <table>
-                <th>
-                    <p>{position}.</p>
-                    <img src={teamImg} alt={teamName} />
-                </th>
-                <tr>
-                    <td>{played}</td>
-                    <td>{win}</td>
-                    <td>{draw}</td>
-                    <td>{lose}</td>
-                    <td>{points}</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <td>
+                            <p>{position}.</p>
+                        </td>
+                        <td>
+                            <img src={teamImg} alt={teamName} />
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{played}</td>
+                        <td>{win}</td>
+                        <td>{draw}</td>
+                        <td>{lose}</td>
+                        <td>{points}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     )
 }
 
 Standings.propTypes = {
-    position: PropTypes.string,
+    position: PropTypes.number,
     teamImg: PropTypes.string,
     teamName: PropTypes.string,
     played: PropTypes.number,

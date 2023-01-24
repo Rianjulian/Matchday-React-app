@@ -10,13 +10,13 @@ import StandingList from "./standings/standings"
 
 const PremierLeague = () => {
     const [match, setMatches] = useState([])
-  const [standing, setStanding] = useState([])
+    const [standing, setStanding] = useState([])
 
   useEffect(() => {
 
     const fetchMatch = async () =>{
       const data = await getMatchData({
-          searchQuery: 'PL'
+          id: 'PL'
       })
       setMatches(data.matches)
       // console.log(data);
@@ -30,10 +30,10 @@ const PremierLeague = () => {
 
     const fetchStanding = async () =>{
       const data = await getStandingData({
-          searchQuery: 'PL'
+          id: 'PL'
       })
       setStanding(data.standings)
-      console.log(data);
+      // console.log(data);
       return
     }
     fetchStanding()

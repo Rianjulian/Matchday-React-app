@@ -4,6 +4,7 @@
 
 .standing img{
     width:1.5em;
+    height: max-content;
 }
 
 table{
@@ -11,13 +12,13 @@ table{
     justify-content: space-between;
 }
 
-th{
+thead tr{
     display:flex;
     align-items:center;
     gap:8px
 }
 
-tr {
+tbody tr {
     padding: 0 3px;
     display: grid;
     grid-template-columns: repeat(5,1fr);

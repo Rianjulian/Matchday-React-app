@@ -16,7 +16,7 @@ const LaLiga = () => {
 
     const fetchMatch = async () =>{
       const data = await getMatchData({
-          searchQuery: 'PD'
+          id: 'PD'
       })
       setMatches(data.matches)
       // console.log(data);
@@ -30,7 +30,7 @@ const LaLiga = () => {
 
     const fetchStanding = async () =>{
       const data = await getStandingData({
-          searchQuery: 'PD'
+          id: 'PD'
       })
       setStanding(data.standings)
       console.log(data);

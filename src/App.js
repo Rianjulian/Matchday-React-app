@@ -21,11 +21,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<PremierLeague/>} />
-          <Route path='pl' element={<PremierLeague/>}/>
-          <Route path='laliga' element={<LaLiga/>}/>
-          <Route path='serie' element={<SerieA/>}/>
-          <Route path='bundesliga'/>
-          <Route path='ligue1'/>
+          <Route path='/pl' element={<PremierLeague/>}/>
+          <Route path='/laliga' element={<LaLiga/>}/>
+          <Route path='/serie' element={<SerieA/>}/>
+          <Route path='/bundesliga'/>
+          <Route path='/ligue1'/>
         </Route>
       </Routes>
     </BrowserRouter>
