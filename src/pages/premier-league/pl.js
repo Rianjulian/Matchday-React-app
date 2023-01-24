@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useEffect, useState } from 'react'
 import { getMatchData } from '../../services/premier-league/getMatch';
 import { getStandingData } from '../../services/premier-league/getStandings';
@@ -46,7 +45,7 @@ const PremierLeague = () => {
         {<StandingList standings={standing}/>}
         {<Banner/>}
         {<MatchList matches={match}/>}
-        <div className="div3">World</div>
+        <h1 className="div3">Premier League</h1>
       </Main>
     </>
   )

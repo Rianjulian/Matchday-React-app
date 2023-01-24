@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@types/react": "^15.7.12",
+    "@types/react": "^17.0.2",
     "@types/react-dom": "^0.14.23"
   },
   "scripts": {

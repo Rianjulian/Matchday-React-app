@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useEffect, useState } from 'react'
 import { getMatchData } from '../../services/serie/getMatch';
 import { getStandingData } from '../../services/serie/getStandings';
@@ -9,7 +8,7 @@ import StandingList from "./standings/standings"
 
 
 const SerieA = () => {
-    const [match, setMatches] = useState([])
+  const [match, setMatches] = useState([])
   const [standing, setStanding] = useState([])
 
   useEffect(() => {
@@ -46,7 +45,7 @@ const SerieA = () => {
         {<StandingList standings={standing}/>}
         {<Banner/>}
         {<MatchList matches={match}/>}
-        <div className="div3">World</div>
+        <h1 className="div3">Serie A</h1>
       </Main>
     </>
   )
