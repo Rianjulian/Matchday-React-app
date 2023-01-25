@@ -4,7 +4,7 @@ import styles from "./poster.module.css"
 
 const Banner = () => {
     return(
-        <img src={Poster} alt="poster"/>
+        <img src={Poster} className={styles.img} alt="poster"/>
     )
 };
 
