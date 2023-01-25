@@ -1,0 +1,27 @@
+.matchWrapper {
+    padding: 16px 24px;
+    background-color: var(--secondary-background-color);
+    display: grid;
+    gap: 12px;
+    width: fit-content;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: span 6;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 460px;
+}
+
+.matchWrapper::-webkit-scrollbar {
+    width: 12px;
+}
+
+.matchWrapper::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.matchWrapper::-webkit-scrollbar-thumb {
+    background-color: #014dff;
+    outline: 1px solid #014dff;
+}
