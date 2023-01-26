@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './component/navbar';
 import Bundesliga from './pages/bundeliga/bundesliga';
 import LaLiga from './pages/laliga/laliga';
+import Ligue from './pages/ligue/ligue';
 import PremierLeague from './pages/premier-league/pl';
 import SerieA from './pages/serie/serie';
 
@@ -19,7 +20,7 @@ function App() {
           <Route path='/laliga' element={<LaLiga/>}/>
           <Route path='/serie' element={<SerieA/>}/>
           <Route path='/bundesliga' element={<Bundesliga/>}/>
-          <Route path='/ligue1'/>
+          <Route path='/ligue1' element={<Ligue/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

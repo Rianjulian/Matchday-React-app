@@ -1,0 +1,38 @@
+.standingList{
+    padding: 8px 0;
+    background-color: var(--secondary-background-color);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 650px;
+}
+
+.standingList h3{
+    padding: 20px ;
+}
+
+.headers{
+    padding: 8px 14px;
+    background-color: #045bfc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table{
+    display: flex;
+    gap: 33px;
+}
+
+.standingList::-webkit-scrollbar {
+    width: 0px;
+}
+
+.standingList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.standingList::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    outline: 1px solid transparent;
+}
