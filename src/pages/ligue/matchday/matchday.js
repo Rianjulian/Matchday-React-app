@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import styles from './matchday-list.module.css'
 import MatchCard from '../../../component/matchday'
-import home from '../../../assets/serie-home.png'
-import away from '../../../assets/serie-away.png'
+import home from '../../../assets/ligue-home.png'
+import away from '../../../assets/ligue-away.png'
 
 const MatchList = ({ matches }) => {
     return(
