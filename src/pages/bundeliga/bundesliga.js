@@ -8,8 +8,8 @@ import StandingList from "./standings/standings"
 
 
 const Bundesliga = () => {
-  const [match, setMatches] = useState([])
-  const [standing, setStanding] = useState([])
+  const [matches, setMatches] = useState([])
+  const [standings, setStanding] = useState([])
 
   useEffect(() => {
 
@@ -42,9 +42,9 @@ const Bundesliga = () => {
   return (
     <>
         <Main>
-        {<StandingList standings={standing}/>}
+        {<StandingList standings={standings}/>}
         {<Banner/>}
-        {<MatchList matches={match}/>}
+        {<MatchList matches={matches}/>}
         <h1 className="div3">Bundesliga</h1>
       </Main>
     </>
