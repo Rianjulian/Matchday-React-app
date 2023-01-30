@@ -5,7 +5,7 @@ import MatchCard from '../matchday/index.js'
 import home from '../../../assets/ligue-home.png'
 import away from '../../../assets/ligue-away.png'
 
-const MatchList = ({ matches }) => {
+const DataMatch = ({ matches }) => {
     return(
         <div className={styles.matchWrapper}>
             <h3>Match & Result</h3>
@@ -27,8 +27,8 @@ const MatchList = ({ matches }) => {
     )
 }
 
-MatchList.propTypes = {
+DataMatch.propTypes = {
     matches: PropTypes.array
 }
 
-export default MatchList
+export default DataMatch
