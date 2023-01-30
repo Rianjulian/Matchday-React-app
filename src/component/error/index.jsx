@@ -1,12 +1,34 @@
-import React from 'react'
-import styles from './error.module.css'
+import React from 'react';
+import PropTypes from 'prop-types'
+import styles from './matchday-list.module.css'
+import MatchCard from '../matchday/index.js'
+import home from '../../../assets/ligue-home.png'
+import away from '../../../assets/ligue-away.png'
 
-const Error = () => {
+const MatchList = ({ matches }) => {
     return(
-        <div className='styles.error'>
-            <h3>Refresh the browser</h3>
+        <div className={styles.matchWrapper}>
+            <h3>Match & Result</h3>
+            {matches.map((match, index, arr)=>{
+                return(
+                    <MatchCard
+                        key={index}
+                        date={match.utcDate}
+                        imgHome={home}
+                        homeTeam={match.homeTeam.name}
+                        scoreHome={match.score.fullTime.homeTeam}
+                        scoreAway={match.score.fullTime.awayTeam}
+                        imgAway={away}
+                        awayTeam={match.awayTeam.name}
+                    />
+                )
+            })}
         </div>
     )
 }
 
-export default Error
+MatchList.propTypes = {
+    matches: PropTypes.array
+}
+
+export default MatchList
