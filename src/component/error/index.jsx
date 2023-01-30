@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import styles from './matchday-list.module.css'
-import MatchCard from '../matchday/index.js'
-import home from '../../../assets/ligue-home.png'
-import away from '../../../assets/ligue-away.png'
+import styles from './error.module.css'
+import MatchCard from '../matchday/index.jsx'
+import home from '../../assets/ligue-home.png'
+import away from '../../assets/ligue-away.png'
 
 const DataMatch = ({ matches }) => {
     return(
